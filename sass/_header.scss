@@ -1,0 +1,40 @@
+header {
+   position: relative;
+
+   .main-nav {
+      padding-top: 29px;
+      padding-bottom: 37px;
+      margin-top: 29px;
+
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 50%;
+         transform: translateX(-50%);
+         background: #ececec;
+         height: 1px;
+         width: 80%;
+      }
+
+      .navbar {
+         margin-top: 70px;
+         padding: 0;
+
+         .navbar-nav {
+            gap: 60px;
+         }
+
+         .nav-link {
+            font-size: 18px;
+            padding: 0;
+            font-weight: 400;
+
+            &.active,
+            &:hover {
+               color: #f26a6e;
+            }
+         }
+      }
+   }
+}

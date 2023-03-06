@@ -1,0 +1,40 @@
+// Bootstrap
+@import "../node_modules/bootstrap/scss/bootstrap";
+// Font Montserrat
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+html,
+body {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 400;
+}
+
+/*General*/
+@mixin post-title {
+   font-size: 24px;
+   font-weight: 400;
+}
+
+@mixin block-title {
+   font-size: 36px;
+   color: #404040;
+   position: relative;
+
+   &:before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      bottom: -10px;
+      width: 80px;
+      height: 2px;
+      background: #f78181;
+      z-index: 1;
+   }
+}
+
+/** Header **/
+@import "header";
+/** Featured Post **/
+@import "featured-post";
+/** Latest Post **/
+@import "latest-post";
