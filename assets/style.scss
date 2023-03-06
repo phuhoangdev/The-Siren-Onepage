@@ -1,0 +1,87 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+
+html,
+body {
+   font-family: "Montserrat", sans-serif;
+   font-weight: 300;
+}
+
+/*Header*/
+header .mainNav {
+   padding: 40px 0;
+}
+header .mainNav .navbar {
+   margin-top: 30px;
+}
+header .mainNav .navbar .nav-link {
+   padding: 10px;
+   margin: 0 15px;
+   font-weight: 400;
+}
+header .mainNav .navbar .nav-link.active,
+header .mainNav .navbar .nav-link:hover {
+   color: #f26a6e;
+}
+
+/*General*/
+.post-title {
+   font-size: 24px;
+   font-weight: 400;
+}
+
+/*Featured Post*/
+.featuredPost .featuredPost-block {
+   position: relative;
+   margin: 8px 0;
+}
+.featuredPost .featuredPost-block::before {
+   content: "";
+   position: absolute;
+   width: 100%;
+   height: 100%;
+   top: 0;
+   left: 0;
+   background: #111111;
+   opacity: 0.2;
+}
+.featuredPost .blockOne .featuredPost-content {
+   padding: 0 60px 40px;
+   transform: translateY(-40px);
+}
+.featuredPost .featuredPost-block.blockOne img {
+   height: 590px;
+}
+.featuredPost .blockOne .post-title {
+   font-size: 36px;
+   margin-bottom: 30px;
+}
+.featuredPost .featuredPost-block:hover::before {
+   opacity: 0;
+}
+
+.featuredPost .featuredPost-content {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   padding: 0 30px 30px;
+}
+.featuredPost .featuredPost-block img {
+   width: 100%;
+   height: 290px;
+   object-fit: cover;
+}
+
+.featuredPost .post-title {
+   color: #ffffff;
+   margin-bottom: 15px;
+}
+.featuredPost .post-meta {
+   color: #ffffff;
+   font-size: 12px;
+}
+.featuredPost .post-meta .post-category {
+   margin-right: 5px;
+}
+.featuredPost .post-meta .post-date {
+   margin-left: 5px;
+}
