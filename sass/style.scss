@@ -1,7 +1,9 @@
 // Bootstrap
 @import "../node_modules/bootstrap/scss/bootstrap";
 // Font Montserrat
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500&display=swap");
+// Font Open Sans
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500&display=swap");
 
 html,
 body {
@@ -13,12 +15,34 @@ body {
 @mixin post-title {
    font-size: 24px;
    font-weight: 400;
+   color: #404040;
+}
+
+@mixin post-meta {
+   color: #888888;
+   font-size: 12px;
+
+   .post-category {
+      margin-right: 5px;
+      color: #313131;
+   }
+
+   .post-date {
+      margin-left: 5px;
+      color: #888888;
+   }
+}
+
+@mixin post-description {
+   font-family: "Open Sans", sans-serif;
+   color: #9a9a9a;
+   font-weight: 300;
+   font-size: 14px;
 }
 
 @mixin block-title {
    font-size: 36px;
    color: #404040;
-   position: relative;
 
    &:before {
       content: "";
@@ -38,3 +62,5 @@ body {
 @import "featured-post";
 /** Latest Post **/
 @import "latest-post";
+/** Post Carousel **/
+@import "post-carousel";
