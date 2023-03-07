@@ -5,6 +5,7 @@
       <meta http-equiv="X-UA-Compatible" content="IE=edge" />
       <meta name="viewport" content="width=device-width, initial-scale=1.0" />
       <title>The Siren Onepage</title>
+      <link rel="stylesheet" href="./vendor/swiper-bundle.min.css" />
       <link rel="stylesheet" href="./assets/css/style.css" />
    </head>
    <body>
@@ -57,6 +58,7 @@
       </header>
 
       <main>
+         <!-- Featured Post -->
          <div class="featured-post">
             <div class="container">
                <div class="row gx-3">
@@ -122,7 +124,7 @@
                </div>
             </div>
          </div>
-
+         <!-- Latest Post -->
          <div class="latest-post">
             <div class="container">
                <h2 class="block-title">The Latest</h2>
@@ -146,6 +148,8 @@
                            dictum quis. Etiam urna libero, vehicula eget neque
                            vel, congue blandit dui. Pellentesqu...
                         </p>
+                     </div>
+                     <div class="card-footer">
                         <div class="post-meta">
                            <span class="post-category">TRAVEL</span>
                            <span> / </span>
@@ -169,6 +173,8 @@
                            of Baker Beach and why its important to Outdoor Yoga
                            SF.
                         </p>
+                     </div>
+                     <div class="card-footer">
                         <div class="post-meta">
                            <span class="post-category">TRAVEL</span>
                            <span> / </span>
@@ -191,6 +197,8 @@
                            dictum quis. Etiam urna libero, vehicula eget neque
                            vel, congue blandit dui. Pellentesqu...
                         </p>
+                     </div>
+                     <div class="card-footer">
                         <div class="post-meta">
                            <span class="post-category">DESIGN</span>
                            <span> / </span>
@@ -201,27 +209,345 @@
                </div>
             </div>
          </div>
-
+         <!-- Post Carousel -->
          <div class="post-carousel">
-            <swiper-container class="post-carousel-swiper" init="false">
-               <swiper-slide>
-                  <img src="./assets/images/carousel-img-1.jpg" />
-               </swiper-slide>
-               <swiper-slide>
-                  <img src="/assets/images/carousel-img-2.jpg" />
-               </swiper-slide>
-               <swiper-slide>
-                  <img src="/assets/images/carousel-img-3.jpg" />
-               </swiper-slide>
-               <swiper-slide>
-                  <img src="/assets/images/carousel-img-2.jpg" />
-               </swiper-slide>
-            </swiper-container>
+            <div class="swiper" class="post-carousel-swiper">
+               <div class="swiper-wrapper">
+                  <a class="swiper-slide" href="#">
+                     <img src="./assets/images/carousel-img-2.jpg" />
+                     <div class="post-content">
+                        <h2 class="post-title">
+                           Arizona Ultimate Adventure – Grand Canyon & Beyond
+                        </h2>
+                        <p class="post-description">
+                           Ready for a real New Year’s resolution? Why not
+                           commit to setting your feet on a brand-new
+                           long-distance hiking trail?
+                        </p>
+                        <div class="post-meta">
+                           <span class="post-category">TRAVEL</span>
+                           <span> / </span>
+                           <span class="post-date">August 21 2017 </span>
+                        </div>
+                     </div>
+                  </a>
+                  <a class="swiper-slide" href="#">
+                     <img src="/assets/images/carousel-img-1.jpg" />
+                     <div class="post-content">
+                        <h2 class="post-title">
+                           Arizona Ultimate Adventure – Grand Canyon & Beyond
+                        </h2>
+                        <p class="post-description">
+                           Ready for a real New Year’s resolution? Why not
+                           commit to setting your feet on a brand-new
+                           long-distance hiking trail?
+                        </p>
+                        <div class="post-meta">
+                           <span class="post-category">TRAVEL</span>
+                           <span> / </span>
+                           <span class="post-date">August 21 2017 </span>
+                        </div>
+                     </div>
+                  </a>
+                  <a class="swiper-slide" href="#">
+                     <img src="/assets/images/carousel-img-3.jpg" />
+                     <div class="post-content">
+                        <h2 class="post-title">
+                           Arizona Ultimate Adventure – Grand Canyon & Beyond
+                        </h2>
+                        <p class="post-description">
+                           Ready for a real New Year’s resolution? Why not
+                           commit to setting your feet on a brand-new
+                           long-distance hiking trail?
+                        </p>
+                        <div class="post-meta">
+                           <span class="post-category">TRAVEL</span>
+                           <span> / </span>
+                           <span class="post-date">August 21 2017 </span>
+                        </div>
+                     </div>
+                  </a>
+                  <a class="swiper-slide" href="#">
+                     <img src="/assets/images/carousel-img-1.jpg" />
+                     <div class="post-content">
+                        <h2 class="post-title">
+                           Arizona Ultimate Adventure – Grand Canyon & Beyond
+                        </h2>
+                        <p class="post-description">
+                           Ready for a real New Year’s resolution? Why not
+                           commit to setting your feet on a brand-new
+                           long-distance hiking trail?
+                        </p>
+                        <div class="post-meta">
+                           <span class="post-category">TRAVEL</span>
+                           <span> / </span>
+                           <span class="post-date">August 21 2017 </span>
+                        </div>
+                     </div>
+                  </a>
+               </div>
+            </div>
+         </div>
+         <!-- Latest Review -->
+         <div class="latest-review">
+            <div class="container">
+               <h2 class="block-title">Latest Reviews</h2>
+               <div class="row">
+                  <div class="col-md-6">
+                     <a class="card" href="#">
+                        <img
+                           src="./assets/images/review-img-1.jpg"
+                           class="card-img-top"
+                           alt="..."
+                        />
+                        <div class="card-body">
+                           <h3 class="card-title">
+                              This Visionary Exhibition Explores a Post-Urban
+                              Future
+                           </h3>
+                           <p class="card-text">
+                              At Documenta 14 in Kassel, Germany, top architects
+                              and designers imagine a world where people return
+                              to living full-time in nature
+                           </p>
+                        </div>
+                        <div class="card-footer">
+                           <div class="post-meta">
+                              <span class="post-category">DESIGN</span>
+                              <span> / </span>
+                              <span class="post-date">August 21 2017 </span>
+                           </div>
+                        </div>
+                     </a>
+                  </div>
+                  <div class="col-md-6">
+                     <div class="row row-cols-1 row-cols-md-2 g-4">
+                        <div class="col">
+                           <a class="card" href="#">
+                              <img
+                                 src="./assets/images/review-img-2.jpg"
+                                 class="card-img-top"
+                                 alt="..."
+                              />
+                              <div class="card-body">
+                                 <h5 class="card-title">
+                                    An iPod Shuffle for Spotify is surprisingly
+                                    essential
+                                 </h5>
+                              </div>
+                              <div class="card-footer">
+                                 <div class="post-meta">
+                                    <span class="post-category">MUSIC</span>
+                                    <span> / </span>
+                                    <span class="post-date"
+                                       >August 21 2017
+                                    </span>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a class="card" href="#">
+                              <img
+                                 src="./assets/images/review-img-3.jpg"
+                                 class="card-img-top"
+                                 alt="..."
+                              />
+                              <div class="card-body">
+                                 <h5 class="card-title">
+                                    Fragile Future, Private Commission Paris
+                                 </h5>
+                              </div>
+                              <div class="card-footer">
+                                 <div class="post-meta">
+                                    <span class="post-category">TRAVEL</span>
+                                    <span> / </span>
+                                    <span class="post-date"
+                                       >August 21 2017
+                                    </span>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a class="card" href="#">
+                              <img
+                                 src="./assets/images/review-img-4.jpg"
+                                 class="card-img-top"
+                                 alt="..."
+                              />
+                              <div class="card-body">
+                                 <h5 class="card-title">
+                                    The first Europeans in the New World
+                                 </h5>
+                              </div>
+                              <div class="card-footer">
+                                 <div class="post-meta">
+                                    <span class="post-category">TRAVEL</span>
+                                    <span> / </span>
+                                    <span class="post-date"
+                                       >August 21 2017
+                                    </span>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                        <div class="col">
+                           <a class="card" href="#">
+                              <img
+                                 src="./assets/images/lastest-img-1.jpg"
+                                 class="card-img-top"
+                                 alt="..."
+                              />
+                              <div class="card-body">
+                                 <h5 class="card-title">
+                                    London house and garden studio
+                                 </h5>
+                              </div>
+                              <div class="card-footer">
+                                 <div class="post-meta">
+                                    <span class="post-category">DESIGN</span>
+                                    <span> / </span>
+                                    <span class="post-date"
+                                       >August 21 2017
+                                    </span>
+                                 </div>
+                              </div>
+                           </a>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+
+         <div class="container">
+            <div class="row">
+               <div class="col-md-8">
+                  <!-- Latest Articles -->
+                  <div class="latest-article">
+                     <div class="container">
+                        <h2 class="block-title">Latest Articles</h2>
+                        <div class="card mb-3">
+                           <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img
+                                    src="..."
+                                    class="img-fluid rounded-start"
+                                    alt="..."
+                                 />
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                       This is a wider card with supporting text
+                                       below as a natural lead-in to additional
+                                       content. This content is a little bit
+                                       longer.
+                                    </p>
+                                    <p class="card-text">
+                                       <small class="text-muted"
+                                          >Last updated 3 mins ago</small
+                                       >
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card mb-3">
+                           <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img
+                                    src="..."
+                                    class="img-fluid rounded-start"
+                                    alt="..."
+                                 />
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                       This is a wider card with supporting text
+                                       below as a natural lead-in to additional
+                                       content. This content is a little bit
+                                       longer.
+                                    </p>
+                                    <p class="card-text">
+                                       <small class="text-muted"
+                                          >Last updated 3 mins ago</small
+                                       >
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card mb-3">
+                           <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img
+                                    src="..."
+                                    class="img-fluid rounded-start"
+                                    alt="..."
+                                 />
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                       This is a wider card with supporting text
+                                       below as a natural lead-in to additional
+                                       content. This content is a little bit
+                                       longer.
+                                    </p>
+                                    <p class="card-text">
+                                       <small class="text-muted"
+                                          >Last updated 3 mins ago</small
+                                       >
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="card mb-3">
+                           <div class="row g-0">
+                              <div class="col-md-4">
+                                 <img
+                                    src="..."
+                                    class="img-fluid rounded-start"
+                                    alt="..."
+                                 />
+                              </div>
+                              <div class="col-md-8">
+                                 <div class="card-body">
+                                    <h5 class="card-title">Card title</h5>
+                                    <p class="card-text">
+                                       This is a wider card with supporting text
+                                       below as a natural lead-in to additional
+                                       content. This content is a little bit
+                                       longer.
+                                    </p>
+                                    <p class="card-text">
+                                       <small class="text-muted"
+                                          >Last updated 3 mins ago</small
+                                       >
+                                    </p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-4">
+                  <aside></aside>
+               </div>
+            </div>
          </div>
       </main>
 
       <script src="./vendor/bootstrap.bundle.min.js"></script>
-      <script src="./vendor/swiper-element-bundle.min.js"></script>
+      <script src="./vendor/swiper-bundle.min.js"></script>
       <script src="./assets/js/script.js"></script>
    </body>
 </html>

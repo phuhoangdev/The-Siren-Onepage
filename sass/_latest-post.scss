@@ -7,7 +7,8 @@
    .block-title {
       @include block-title;
       position: absolute;
-      top: -52px;
+      top: -62px;
+      padding-bottom: 10px;
    }
 
    .latest-block {
@@ -50,12 +51,14 @@
             }
          }
 
-         .post-meta {
+         .card-footer {
             background: #ffffff;
             border: none;
-            margin-top: 30px;
+            padding: 30px;
 
-            @include post-meta;
+            .post-meta {
+               @include post-meta;
+            }
          }
       }
    }

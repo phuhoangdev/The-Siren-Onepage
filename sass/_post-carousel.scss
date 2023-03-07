@@ -1,37 +1,83 @@
 .post-carousel {
-   swiper-container {
+   padding-top: 40px;
+   background: #f7f7f7;
+
+   .swiper {
       width: 100%;
       height: 100%;
    }
 
-   swiper-slide {
-      text-align: center;
+   .swiper-slide {
       font-size: 18px;
-      background: #fff;
-      display: flex;
+      background: transparent;
       justify-content: center;
       align-items: center;
       transition: all 0.3s;
-   }
+      position: relative;
 
-   swiper-slide.swiper-slide-active {
-      width: 10% !important;
+      .post-content {
+         position: absolute;
+         bottom: 80px;
+         left: 80px;
+         padding-right: 50px;
+         visibility: hidden;
 
-      img {
-         opacity: 0.6;
+         .post-title {
+            @include post-title;
+            font-size: 48px;
+            color: #ffffff;
+            margin-bottom: 15px;
+         }
+         .post-description {
+            @include post-description;
+            color: #ffffff;
+         }
+         .post-meta {
+            @include post-meta;
+            color: #ffffff;
+            margin-top: 60px;
+
+            .post-category,
+            .post-date {
+               margin-right: 5px;
+               color: #ffffff;
+            }
+         }
       }
    }
-   swiper-slide.swiper-slide-prev {
-      width: 30% !important;
-   }
-   swiper-slide.swiper-slide-next {
-      width: 60% !important;
+
+   @media screen and (min-width: 1024px) {
+      .swiper-slide {
+         display: flex;
+         flex: 0 0 33.3%;
+      }
+
+      .swiper-slide.swiper-slide-active {
+         flex: 0 0 52%;
+         transform: translateY(-40px);
+
+         .post-content {
+            visibility: visible;
+         }
+      }
+
+      .swiper-slide.swiper-slide-prev {
+         flex: 0 0 15%;
+
+         img {
+            opacity: 0.6;
+         }
+      }
+      .swiper-slide.swiper-slide-next {
+         flex: 0 0 33%;
+      }
    }
 
-   swiper-slide img {
+   .swiper-slide img {
       display: block;
       width: 100%;
       height: 780px;
       object-fit: cover;
+      transform: translateY(40px);
    }
 }

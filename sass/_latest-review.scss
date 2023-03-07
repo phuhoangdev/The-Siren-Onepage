@@ -1,0 +1,59 @@
+.latest-review {
+   padding: 20px 0;
+   margin-top: 84px;
+
+   .block-title {
+      @include block-title;
+      position: relative;
+      padding-bottom: 10px;
+      margin-bottom: 50px;
+   }
+
+   .card {
+      border: none;
+      border-radius: 0;
+      position: relative;
+      text-decoration: none;
+
+      &::before {
+         content: "";
+         position: absolute;
+         bottom: 0;
+         left: 0;
+         width: 0;
+         height: 4px;
+         background: #f78181;
+      }
+
+      &:hover::before {
+         width: 100%;
+      }
+
+      img {
+         border-radius: 0;
+      }
+
+      .card-body {
+         background: #ffffff;
+         padding: 20px;
+
+         .card-title {
+            @include post-title;
+         }
+
+         .card-text {
+            @include post-description;
+         }
+      }
+
+      .card-footer {
+         background: #ffffff;
+         border: none;
+         padding: 20px;
+
+         .post-meta {
+            @include post-meta;
+         }
+      }
+   }
+}

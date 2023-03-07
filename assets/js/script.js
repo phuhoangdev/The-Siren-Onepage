@@ -1,20 +1,11 @@
-const swiperEl = document.querySelector(".post-carousel-swiper");
-Object.assign(swiperEl, {
+const swiper = new Swiper(".swiper", {
    spaceBetween: 8,
-   slidesPerView: 3,
-   breakpoints: {
-      640: {
-         slidesPerView: 2,
-      },
-      768: {
-         slidesPerView: 2,
-      },
-      1024: {
-         slidesPerView: 3,
-      },
-   },
-   onSlideChangeEnd: function (e) {
-      swiperEl.update(true);
+   slidesPerView: "auto",
+   centeredSlides: true,
+   loop: true,
+   loopedSlides: 1,
+   grabCursor: true,
+   autoplay: {
+      delay: 5000,
    },
 });
-swiperEl.initialize();
