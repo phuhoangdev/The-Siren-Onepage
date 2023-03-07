@@ -11141,4 +11141,117 @@ header .main-nav .navbar .nav-link.active, header .main-nav .navbar .nav-link:ho
   color: #888888;
 }
 
+/** Latest Articles **/
+.latest-article .block-title {
+  font-size: 36px;
+  color: #404040;
+  position: relative;
+  padding-bottom: 10px;
+  margin-bottom: 50px;
+}
+.latest-article .block-title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px;
+  height: 2px;
+  background: #f78181;
+  z-index: 1;
+}
+.latest-article .card {
+  border: none;
+  margin-bottom: 30px;
+}
+.latest-article .card img {
+  height: 100%;
+  object-fit: cover;
+}
+.latest-article .card-body {
+  background: #ffffff;
+  padding: 30px;
+}
+.latest-article .card-body .card-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #404040;
+}
+.latest-article .card-body .card-text {
+  font-family: "Open Sans", sans-serif;
+  color: #9a9a9a;
+  font-weight: 300;
+  font-size: 14px;
+}
+.latest-article .card-footer {
+  background: #ffffff;
+  border: none;
+  padding: 30px;
+}
+.latest-article .card-footer .post-meta {
+  color: #888888;
+  font-size: 12px;
+}
+.latest-article .card-footer .post-meta .post-category {
+  margin-right: 5px;
+  color: #313131;
+}
+.latest-article .card-footer .post-meta .post-date {
+  margin-left: 5px;
+  color: #888888;
+}
+
+/** Footer **/
+.main-footer {
+  background: #1a1a1a;
+  padding: 60px;
+}
+.main-footer .footer-logo img {
+  max-width: 100%;
+  width: auto;
+  height: 44px;
+}
+.main-footer .footer-nav {
+  margin-top: 50px;
+  padding-bottom: 80px;
+  border-bottom: 1px solid #333333;
+}
+.main-footer .footer-nav .nav-link {
+  color: #ffffff;
+  font-size: 18px;
+}
+.main-footer .footer-nav .nav-link:hover {
+  color: #f26a6e;
+}
+.main-footer .footer-social {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 40px;
+}
+.main-footer .footer-social .social-icon {
+  border-radius: 50%;
+  padding: 10px;
+  border: 1px solid #5e5e5e;
+  height: 40px;
+  width: 40px;
+  display: flex;
+  margin: 0 8px;
+}
+.main-footer .footer-social .social-icon svg {
+  display: inline-block;
+  max-width: 100%;
+  width: 100%;
+  height: 19px;
+  fill: #ffffff;
+}
+.main-footer .footer-social .social-icon:hover svg {
+  fill: #f26a6e;
+}
+.main-footer .footer-copyright {
+  font-size: 12px;
+  color: #4c4c4c;
+  text-align: center;
+}
+
 /*# sourceMappingURL=style.css.map */
