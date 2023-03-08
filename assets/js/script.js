@@ -2,6 +2,7 @@ const swiper = new Swiper(".swiper", {
    spaceBetween: 8,
    slidesPerView: "auto",
    centeredSlides: true,
+   slideToClickedSlide: true,
    loop: true,
    loopedSlides: 1,
    grabCursor: true,
@@ -10,44 +11,40 @@ const swiper = new Swiper(".swiper", {
    },
 });
 
-var galleryThumbs = new Swiper(".gallery-thumbs", {
-   centeredSlides: true,
-   centeredSlidesBounds: true,
+const videoThumbs = new Swiper(".video-thumbs", {
    direction: "vertical",
-   spaceBetween: 10,
-   slidesPerView: 3,
+   slidesPerView: 4,
    freeMode: false,
    watchSlidesVisibility: true,
    watchSlidesProgress: true,
    watchOverflow: true,
    breakpoints: {
-      480: {
+      360: {
          direction: "vertical",
-         slidesPerView: 3,
+         slidesPerView: 1,
+      },
+      1024: {
+         direction: "vertical",
+         slidesPerView: 4,
       },
    },
 });
-var galleryTop = new Swiper(".gallery-top", {
+const videoMain = new Swiper(".video-main", {
    direction: "vertical",
-   spaceBetween: 10,
    navigation: {
-      nextEl: ".swiper-button-next",
-      prevEl: ".swiper-button-prev",
-   },
-   a11y: {
-      prevSlideMessage: "Previous slide",
-      nextSlideMessage: "Next slide",
+      nextEl: ".arrow-next",
+      prevEl: ".arrow-prev",
    },
    keyboard: {
       enabled: true,
    },
    thumbs: {
-      swiper: galleryThumbs,
+      swiper: videoThumbs,
    },
 });
-galleryTop.on("slideChangeTransitionStart", function () {
-   galleryThumbs.slideTo(galleryTop.activeIndex);
+videoMain.on("slideChangeTransitionStart", function () {
+   videoThumbs.slideTo(videoMain.activeIndex);
 });
-galleryThumbs.on("transitionStart", function () {
-   galleryTop.slideTo(galleryThumbs.activeIndex);
+videoThumbs.on("transitionStart", function () {
+   videoMain.slideTo(videoThumbs.activeIndex);
 });

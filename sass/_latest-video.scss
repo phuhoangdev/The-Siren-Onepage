@@ -1,6 +1,10 @@
 .latest-video {
+   background: #393939;
+   padding: 50px 0;
+
    .block-title {
       @include block-title;
+      color: #ffffff;
       position: relative;
       padding-bottom: 10px;
       margin-bottom: 50px;
@@ -9,8 +13,6 @@
    .swiper-container {
       overflow: hidden;
       width: 100%;
-      margin-left: auto;
-      margin-right: auto;
       @media (min-width: 1024px) {
          min-height: 320px;
       }
@@ -18,77 +20,64 @@
          display: flex;
          flex-flow: column nowrap;
          @media (min-width: 1024px) {
-            flex-flow: row nowrap;
+            flex-flow: column nowrap;
          }
          height: 100%;
          width: 100%;
+
+         .video-arrows {
+            color: #888888;
+            display: flex;
+            flex-direction: row;
+            justify-content: end;
+            margin-top: 30px;
+
+            .arrow-prev,
+            .arrow-next {
+               padding: 10px;
+               cursor: pointer;
+            }
+
+            svg {
+               font-size: 18px;
+
+               &:hover {
+                  color: #ffffff;
+               }
+            }
+         }
       }
    }
 
    .swiper-button {
       &-next,
       &-prev {
-         color: #000;
+         color: #ffffff;
       }
    }
 
    .swiper-slide {
-      text-align: center;
-      background-size: cover;
-      background-position: center;
-      background-color: #fff;
-
-      /* Center slide text vertically */
+      color: #ffffff;
       display: flex;
       flex-flow: column nowrap;
-      justify-content: center;
-      align-items: center;
-
-      /* Slide content */
-      .description,
-      .title {
-         display: block;
-         opacity: 0;
-         transition: 0.5s ease 0.5s;
-      }
-      &-active {
-         .description,
-         .title {
-            opacity: 1;
-         }
-         .title {
-            margin-bottom: 0.5rem;
-            font-size: 24px;
-            color: #000;
-            transition: opacity 0.5s ease 0.5s;
-         }
-         .description {
-            font-size: 16px;
-            color: #777;
-            transition: opacity 0.5s ease 0.75s;
-         }
-      }
+      justify-content: space-around;
    }
 
-   .gallery-top {
+   .video-main {
       position: relative;
       width: 100%;
       height: 75vh;
       @media (min-width: 1024px) {
-         width: 80%;
-         height: 100vh;
-         margin-right: 10px;
+         height: 560px;
       }
    }
 
-   .gallery-thumbs {
+   .video-thumbs {
       width: 100%;
       height: 25vh;
-      padding-top: 10px;
+
       @media (min-width: 1024px) {
-         width: 20%;
-         height: 100vh;
-         padding: 0;
+         height: 560px;
       }
       .swiper-wrapper {
          flex-direction: row;
@@ -97,18 +86,74 @@
          }
       }
       .swiper-slide {
-         width: 25%;
          flex-flow: row nowrap;
+         border-top: 1px solid #444444;
+         border-bottom: 1px solid #444444;
+         background: transparent;
+         position: relative;
+         padding: 0 15px;
+
+         &::before {
+            position: absolute;
+            content: "";
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: $primary-color;
+         }
+
          @media (min-width: 1024px) {
             flex-flow: column nowrap;
-            width: 100%;
          }
          height: 100%;
-         opacity: 0.75;
          cursor: pointer;
-      }
-      .swiper-slide-thumb-active {
-         opacity: 1;
+
+         &-thumb-active,
+         &:hover {
+            background: #313131;
+
+            &::before {
+               width: 100%;
+               transition: all 0.3s;
+            }
+
+            .video-meta {
+               display: none !important;
+            }
+
+            .btn-play {
+               display: flex !important;
+            }
+         }
+
+         .video-title {
+            text-align: left;
+            font-size: 24px;
+         }
+         .video-meta {
+            @include post-meta;
+
+            .post-category {
+               color: #ffffff;
+            }
+         }
+
+         .btn-play {
+            flex-direction: row;
+            align-items: center;
+            display: none;
+            font-size: 12px;
+
+            svg {
+               display: inline-block;
+               max-width: 100%;
+               width: auto;
+               height: 18px;
+               margin-right: 15px;
+               fill: $primary-color;
+            }
+         }
       }
    }
 }
