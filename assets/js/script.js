@@ -4,6 +4,9 @@ const featuredPost = new Swiper(".featured-post-swiper", {
    slidesPerView: 1,
    grabCursor: true,
    loop: true,
+   autoplay: {
+      delay: 5000,
+   },
    pagination: {
       el: ".swiper-pagination",
       clickable: true,
@@ -19,6 +22,11 @@ const postCarousel = new Swiper(".post-carousel-swiper", {
    loop: true,
    loopedSlides: 1,
    grabCursor: true,
+   navigation: true,
+   navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+   },
 });
 
 //Latest Video
@@ -57,33 +65,6 @@ videoMain.on("slideChangeTransitionStart", function () {
 });
 videoThumbs.on("transitionStart", function () {
    videoMain.slideTo(videoThumbs.activeIndex);
-});
-
-videoMain.on("reachEnd", function () {
-   let numOfSlides = this.wrapperEl.querySelectorAll(".swiper-slide").length;
-   let currentSlide = this.activeIndex;
-   let realIndex = this.realIndex;
-   var button = document.querySelector(".arrow-next");
-   // if (videoThumbs.reachEnd === 4) {
-   //    console.log("true");
-   // } else {
-   //    console.log("false");
-   // }
-
-   //console.log(this.realIndex);
-
-   if (+currentSlide + 1 === numOfSlides) {
-      button.onclick = function () {
-         // console.log(currentSlide);
-      };
-   }
-
-   //console.log(this.activeIndex);
-
-   //if (this.activeIndex === numOfSlides) {
-   //videoThumbs.slideTo(0, 1, false);
-
-   //}
 });
 
 //Instagram Gallery
