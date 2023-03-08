@@ -1,6 +1,6 @@
 .latest-video {
    background: #393939;
-   padding: 50px 0;
+   padding: 50px 0 80px;
 
    .block-title {
       @include block-title;
@@ -13,6 +13,7 @@
    .swiper-container {
       overflow: hidden;
       width: 100%;
+
       @media (min-width: 1024px) {
          min-height: 320px;
       }
@@ -26,7 +27,7 @@
          width: 100%;
 
          .video-arrows {
-            color: #888888;
+            color: #999999;
             display: flex;
             flex-direction: row;
             justify-content: end;
@@ -91,7 +92,7 @@
          border-bottom: 1px solid #444444;
          background: transparent;
          position: relative;
-         padding: 0 15px;
+         padding: 5px 15px;
 
          &::before {
             position: absolute;
