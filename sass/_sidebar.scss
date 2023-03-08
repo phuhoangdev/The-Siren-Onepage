@@ -3,4 +3,69 @@ aside {
       padding: 30px;
       border: 1px solid #dddddd;
    }
+
+   .top-posts {
+      margin-top: 60px;
+
+      .block-title {
+         @include block-title;
+         font-size: 24px;
+         margin-bottom: 30px;
+      }
+
+      .card {
+         border: none;
+         border-radius: 0;
+         position: relative;
+         text-decoration: none;
+
+         img {
+            border-radius: 0;
+         }
+
+         .card-body {
+            background: #ffffff;
+            padding: 20px;
+
+            .card-title {
+               @include post-title;
+            }
+
+            .card-text {
+               @include post-description;
+            }
+         }
+
+         .card-footer {
+            background: #ffffff;
+            border: none;
+            padding: 20px;
+
+            .post-meta {
+               @include post-meta;
+            }
+         }
+      }
+
+      .top-posts-child {
+         .card {
+            img {
+               height: 100%;
+               object-fit: cover;
+            }
+
+            .card-body {
+               padding: 5px 20px;
+
+               .card-title {
+                  font-size: 24px;
+               }
+            }
+
+            .card-footer {
+               padding: 5px 20px;
+            }
+         }
+      }
+   }
 }

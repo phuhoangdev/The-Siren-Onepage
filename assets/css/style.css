@@ -10929,6 +10929,7 @@ header .main-nav .navbar .nav-link.active, header .main-nav .navbar .nav-link:ho
 .latest-post .block-title {
   font-size: 36px;
   color: #404040;
+  position: relative;
   position: absolute;
   top: -62px;
   padding-bottom: 10px;
@@ -11098,6 +11099,7 @@ header .main-nav .navbar .nav-link.active, header .main-nav .navbar .nav-link:ho
   font-size: 36px;
   color: #404040;
   position: relative;
+  position: relative;
   padding-bottom: 10px;
   margin-bottom: 50px;
 }
@@ -11170,6 +11172,7 @@ header .main-nav .navbar .nav-link.active, header .main-nav .navbar .nav-link:ho
   font-size: 36px;
   color: #404040;
   position: relative;
+  position: relative;
   padding-bottom: 10px;
   margin-bottom: 50px;
 }
@@ -11189,6 +11192,9 @@ header .main-nav .navbar .nav-link.active, header .main-nav .navbar .nav-link:ho
   border-radius: 0;
   text-decoration: none;
 }
+.latest-article .card:first-of-type .card-title {
+  font-size: 36px;
+}
 .latest-article .card:hover img {
   opacity: 0.75;
 }
@@ -11198,12 +11204,13 @@ header .main-nav .navbar .nav-link.active, header .main-nav .navbar .nav-link:ho
 }
 .latest-article .card-body {
   background: #ffffff;
-  padding: 10px 30px;
+  padding: 5px 30px;
 }
 .latest-article .card-body .card-title {
   font-size: 24px;
   font-weight: 400;
   color: #404040;
+  margin-bottom: 20px;
 }
 .latest-article .card-body .card-text {
   font-family: "Open Sans", sans-serif;
@@ -11214,7 +11221,7 @@ header .main-nav .navbar .nav-link.active, header .main-nav .navbar .nav-link:ho
 .latest-article .card-footer {
   background: #ffffff;
   border: none;
-  padding: 10px 30px;
+  padding: 5px 30px;
 }
 .latest-article .card-footer .post-meta {
   color: #888888;
@@ -11272,6 +11279,80 @@ header .main-nav .navbar .nav-link.active, header .main-nav .navbar .nav-link:ho
 aside .banner-ads {
   padding: 30px;
   border: 1px solid #dddddd;
+}
+aside .top-posts {
+  margin-top: 60px;
+}
+aside .top-posts .block-title {
+  font-size: 36px;
+  color: #404040;
+  position: relative;
+  font-size: 24px;
+  margin-bottom: 30px;
+}
+aside .top-posts .block-title:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 80px;
+  height: 2px;
+  background: #f78181;
+  z-index: 1;
+}
+aside .top-posts .card {
+  border: none;
+  border-radius: 0;
+  position: relative;
+  text-decoration: none;
+}
+aside .top-posts .card img {
+  border-radius: 0;
+}
+aside .top-posts .card .card-body {
+  background: #ffffff;
+  padding: 20px;
+}
+aside .top-posts .card .card-body .card-title {
+  font-size: 24px;
+  font-weight: 400;
+  color: #404040;
+}
+aside .top-posts .card .card-body .card-text {
+  font-family: "Open Sans", sans-serif;
+  color: #9a9a9a;
+  font-weight: 300;
+  font-size: 14px;
+}
+aside .top-posts .card .card-footer {
+  background: #ffffff;
+  border: none;
+  padding: 20px;
+}
+aside .top-posts .card .card-footer .post-meta {
+  color: #888888;
+  font-size: 12px;
+}
+aside .top-posts .card .card-footer .post-meta .post-category {
+  margin-right: 5px;
+  color: #313131;
+}
+aside .top-posts .card .card-footer .post-meta .post-date {
+  margin-left: 5px;
+  color: #888888;
+}
+aside .top-posts .top-posts-child .card img {
+  height: 100%;
+  object-fit: cover;
+}
+aside .top-posts .top-posts-child .card .card-body {
+  padding: 5px 20px;
+}
+aside .top-posts .top-posts-child .card .card-body .card-title {
+  font-size: 24px;
+}
+aside .top-posts .top-posts-child .card .card-footer {
+  padding: 5px 20px;
 }
 
 /** Slider Bottom **/
@@ -11359,6 +11440,7 @@ aside .banner-ads {
 .latest-video .block-title {
   font-size: 36px;
   color: #404040;
+  position: relative;
   color: #ffffff;
   position: relative;
   padding-bottom: 10px;

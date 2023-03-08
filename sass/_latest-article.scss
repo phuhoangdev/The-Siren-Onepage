@@ -12,6 +12,10 @@
       border-radius: 0;
       text-decoration: none;
 
+      &:first-of-type .card-title {
+         font-size: 36px;
+      }
+
       &:hover img {
          opacity: 0.75;
       }
@@ -24,10 +28,11 @@
 
    .card-body {
       background: #ffffff;
-      padding: 10px 30px;
+      padding: 5px 30px;
 
       .card-title {
          @include post-title;
+         margin-bottom: 20px;
       }
 
       .card-text {
@@ -38,7 +43,7 @@
    .card-footer {
       background: #ffffff;
       border: none;
-      padding: 10px 30px;
+      padding: 5px 30px;
 
       .post-meta {
          @include post-meta;

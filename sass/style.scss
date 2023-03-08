@@ -45,6 +45,7 @@ $primary-color: #f78181;
 @mixin block-title {
    font-size: 36px;
    color: #404040;
+   position: relative;
 
    &:before {
       content: "";
