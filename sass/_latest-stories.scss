@@ -1,0 +1,100 @@
+.latest-stories {
+   position: relative;
+   padding: 80px 0 60px;
+
+   .block-title {
+      @include block-title;
+   }
+
+   .stories-block {
+      margin: 50px 0;
+      border-top: 1px solid #eeeeee;
+
+      .card {
+         border: none;
+         border-radius: 0;
+         position: relative;
+         text-decoration: none;
+         border-right: 1px solid #eeeeee;
+         padding: 20px 0;
+         padding-right: 20px;
+         margin-top: 30px;
+
+         &:last-child {
+            border-right: none;
+         }
+
+         &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            height: 4px;
+            background: $primary-color;
+         }
+
+         &:hover::before {
+            width: 100%;
+         }
+
+         .card-body {
+            background: #ffffff;
+            padding: 10px;
+
+            .card-title {
+               @include post-title;
+               font-size: 32px;
+               margin-bottom: 40px;
+            }
+
+            .card-text {
+               @include post-description;
+               font-size: 14px;
+               margin-bottom: 30px;
+
+               b,
+               strong {
+                  color: $primary-color;
+               }
+            }
+         }
+
+         .card-footer {
+            background: #ffffff;
+            border: none;
+            padding: 10px;
+
+            .post-meta {
+               @include post-meta;
+            }
+         }
+      }
+   }
+
+   .btn-more {
+      border-radius: 0;
+      text-transform: uppercase;
+      font-size: 15px;
+      font-weight: 300;
+      margin: 10px;
+      padding: 0;
+      border: none;
+      transition: all 0.3s;
+
+      &:hover {
+         transform: translateX(10px);
+         transition: all 0.3s;
+      }
+
+      &:focus,
+      &:active {
+         border: none;
+      }
+
+      svg {
+         margin-left: 10px;
+         color: $primary-color;
+      }
+   }
+}

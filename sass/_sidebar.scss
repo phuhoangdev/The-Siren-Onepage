@@ -1,11 +1,21 @@
 aside {
+   margin-top: 100px;
+
    .banner-ads {
       padding: 30px;
       border: 1px solid #dddddd;
+
+      &:hover img {
+         opacity: 0.75;
+      }
+   }
+
+   .card:hover img {
+      opacity: 0.75;
    }
 
    .top-posts {
-      margin-top: 60px;
+      margin-top: 40px;
 
       .block-title {
          @include block-title;
@@ -18,6 +28,7 @@ aside {
          border-radius: 0;
          position: relative;
          text-decoration: none;
+         border-bottom: 1px solid #eeeeee;
 
          img {
             border-radius: 0;
@@ -48,13 +59,15 @@ aside {
       }
 
       .top-posts-child {
-         margin-top: 15px;
+         margin-top: 10px;
 
          .card {
+            padding: 15px 0;
+
             img {
                width: 100%;
                max-width: 100%;
-               height: 100px;
+               height: 110px;
                object-fit: cover;
             }
 

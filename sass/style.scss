@@ -9,6 +9,7 @@ html,
 body {
    font-family: "Montserrat", sans-serif;
    font-weight: 400;
+   position: relative;
 }
 
 /*General*/
@@ -77,6 +78,8 @@ $primary-color: #f78181;
 @import "sidebar";
 /** Slider Bottom **/
 @import "slider-bottom";
+/** Latest Stories  **/
+@import "latest-stories";
 /** Subscribe Block **/
 @import "subscribe-block";
 /** Latest Video **/
@@ -85,3 +88,5 @@ $primary-color: #f78181;
 @import "instagram-gallery";
 /** Footer **/
 @import "footer";
+/** Floating Top **/
+@import "floating-top";
